@@ -2,6 +2,8 @@
  
 Visit https://qqaatw.github.io/pytorch-mps-ops-coverage/ to check the table.
 
+The table is updated automatically every day.
+
 ## Note
 
 The table only contains ops under MPS dispatch key in `native_functions.yaml` for simplicity.
@@ -13,7 +15,7 @@ For other dispatch keys and ops outside PyTorch:
 
 ## Contributions
 
-Contributions are welcomed for completing the details of MPS ops coverage in `config.yml`. 
+Contributions are welcomed for completing the details of MPS ops coverage in `config.yml`.
 
 Currently, there are two entries for each op that can be filled:
 
