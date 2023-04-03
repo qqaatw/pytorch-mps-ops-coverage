@@ -1,0 +1,32 @@
+name: Build MPS Support Table
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Checkout PyTorch
+        uses: actions/checkout@v3
+        with:
+          repository: "pytorch/pytorch"
+          path: "pytorch"
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install requirements
+        run: |
+          pip install -r requirements.txt
+          pip install -r pytorch/requirements.txt
+      - name: Update table
+        run: python check_and_update.py --task update
+      - name: Commit and push index.html
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update index.html
+          file_pattern: index.html
