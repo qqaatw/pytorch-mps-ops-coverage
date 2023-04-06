@@ -1,4 +1,22 @@
-details:
+external: # Manually registered ops which are not in `native_functions.yaml`
+  var_mean.correction:
+    kernel: menually registered
+    structuted: menually registered
+    cpp_namespace: menually registered
+  native_group_norm:
+    kernel: menually registered
+    structuted: menually registered
+    cpp_namespace: menually registered
+  native_group_norm_backward:
+    kernel: menually registered
+    structuted: menually registered
+    cpp_namespace: menually registered
+details: # The details of the MPS ops.
   cumsum.out:
     starting_macOS_version: 13.0
-  
+  var_mean.correction:
+    included_in_latest: True
+  native_group_norm:
+    included_in_latest: True
+  native_group_norm_backward:
+    included_in_latest: True

@@ -80,15 +80,26 @@ def update(output_file="index.html"):
                 <th>Note</th>
             </tr>"""
     table_rows = []
+
+    defaults = {
+        "starting_macOS_version": "N/A",
+        "note": "N/A",
+    }
+    
+    master_supported_ops.update(config["external"])
+
     for k, v in master_supported_ops.items():
         included_in_latest = True if k in latest_release_supported_ops else False
-        starting_macOS_version = "N/A"
-        note = "N/A"
-        if k in config["details"]:
-            starting_macOS_version = config["details"][k].get("starting_macOS_version", "N/A")
-            note = config["details"][k].get("note", "N/A")
 
-        table_rows.append(f"<tr><td>{k}</td><td>{v['kernel']}</td><td>{included_in_latest}</td><td>{starting_macOS_version}</td><td>{note}</td></tr>")
+        if k not in config["details"]:
+            config["details"][k] = {}
+
+        included_in_latest = config["details"][k].get("included_in_latest", included_in_latest)
+        included_in_latest_color_code = "#0ff000" if included_in_latest else "#fff000"
+        starting_macOS_version = config["details"][k].get("starting_macOS_version", defaults["starting_macOS_version"])
+        note = config["details"][k].get("note", defaults["note"])
+
+        table_rows.append(f"<tr><td>{k}</td><td>{v['kernel']}</td><td style='background-color:{included_in_latest_color_code};'>{included_in_latest}</td><td>{starting_macOS_version}</td><td>{note}</td></tr>")
     
     with open(output_file, "w", encoding="utf8") as f:
         f.write(template.format(table_header, "\n".join(table_rows)))
