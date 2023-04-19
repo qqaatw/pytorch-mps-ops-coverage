@@ -29,7 +29,7 @@ def checkout(repo_path, commit):
     pytorch_repo.heads[commit].checkout()
     return commit
 
-def load_supported_ops(commit="master"):
+def load_supported_ops(commit="main"):
     pytorch_path = os.path.abspath("./pytorch")
     commit = checkout(pytorch_path, commit)
     if sys.path[0] != pytorch_path:
