@@ -36,8 +36,12 @@ def load_supported_ops(commit="main"):
         sys.path.insert(0, pytorch_path)
     gen_module = importlib.import_module("torchgen.gen")
     model = importlib.import_module("torchgen.model")
+    # importing utils is a hack for recent yaml dependency change:
+    # https://github.com/pytorch/pytorch/pull/100203
+    utils = importlib.import_module("torchgen.utils")
     
     # The reload order matters
+    importlib.reload(utils)
     importlib.reload(model)
     importlib.reload(gen_module)
 
