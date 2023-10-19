@@ -11,7 +11,7 @@ The table only contains ops under MPS dispatch key in `native_functions.yaml` fo
 For other dispatch keys and ops outside PyTorch:
 1. `CompositeExplicitAutograd`: Most ops under this dispatch key have been supported by MPS.
 2. `CompositeImplicitAutograd`: Most ops under this dispatch key have been supported by MPS.
-3. `torchvision`: Ops under `torchvision` have not been supported by MPS.
+3. `torchvision`: Except for `deform_conv2d`, other ops such as `nms` have been supported by MPS.
 
 ## Contributions
 
