@@ -19,7 +19,7 @@
             <tr>
                 <th data-sortable="true">Function name</th>
                 <th data-sortable="true">Kernel Name</th>
-                <th data-sortable="true">In v2.1.2</th>
+                <th data-sortable="true">In v2.2.0</th>
                 <th data-sortable="true">Starting from macOS version</th>
                 <th>Note</th>
             </tr>
@@ -28,7 +28,7 @@
             <tr><td>abs.out</td><td>abs_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>view_as_real</td><td>view_as_real</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>view_as_complex</td><td>view_as_complex</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>sgn.out</td><td>sgn_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>sgn.out</td><td>sgn_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>acos.out</td><td>acos_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>add.out</td><td>add_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addmv.out</td><td>addmv_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -143,8 +143,8 @@
 <tr><td>native_batch_norm_backward</td><td>batch_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_cdist_forward</td><td>_cdist_forward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>permute</td><td>permute_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>pixel_shuffle</td><td>pixel_shuffle_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>pixel_unshuffle</td><td>pixel_unshuffle_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>pixel_shuffle</td><td>pixel_shuffle_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>pixel_unshuffle</td><td>pixel_unshuffle_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>is_pinned</td><td>is_pinned_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_pin_memory</td><td>_pin_memory_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>randperm.generator_out</td><td>randperm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -163,8 +163,8 @@
 <tr><td>rsqrt.out</td><td>rsqrt_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>silu.out</td><td>silu_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>silu_backward.grad_input</td><td>silu_backward_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>mish.out</td><td>mish_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>mish_backward</td><td>mish_backward_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>mish.out</td><td>mish_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>mish_backward</td><td>mish_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>sigmoid.out</td><td>sigmoid_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>logit</td><td>logit_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>logit.out</td><td>logit_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -192,9 +192,9 @@
 <tr><td>var.correction</td><td>var_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>where.self</td><td>where_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>where.self_out</td><td>where_self_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_weight_norm_interface</td><td>weight_norm_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_weight_norm_interface_backward</td><td>weight_norm_backward_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_efficientzerotensor</td><td>_efficientzerotensor_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_weight_norm_interface</td><td>weight_norm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_weight_norm_interface_backward</td><td>weight_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_efficientzerotensor</td><td>_efficientzerotensor_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>norm.dtype_out</td><td>norm_dtype_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>norm.out</td><td>norm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>zero</td><td>zero_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -259,9 +259,9 @@
 <tr><td>linalg_solve_triangular</td><td>linalg_solve_triangular_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>multinomial.out</td><td>multinomial_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>multinomial</td><td>multinomial_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>lgamma.out</td><td>lgamma_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>digamma.out</td><td>digamma_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>polygamma.out</td><td>polygamma_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>lgamma.out</td><td>lgamma_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>digamma.out</td><td>digamma_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>polygamma.out</td><td>polygamma_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>erfinv.out</td><td>erfinv_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>sign.out</td><td>sign_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>signbit.out</td><td>signbit_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -279,7 +279,7 @@
 <tr><td>_histogramdd_from_bin_tensors</td><td>_histogramdd</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>fmod.Tensor_out</td><td>fmod_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>hypot.out</td><td>hypot_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>nextafter.out</td><td>nextafter_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>nextafter.out</td><td>nextafter_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>remainder.Tensor_out</td><td>remainder_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>remainder.Scalar_Tensor</td><td>remainder</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>min</td><td>min_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -306,13 +306,13 @@
 <tr><td>normal.float_Tensor</td><td>normal_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>normal.Tensor_Tensor_out</td><td>normal_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>normal.Tensor_Tensor</td><td>normal_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>bucketize.Tensor</td><td>bucketize_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>bucketize.Tensor_out</td><td>bucketize_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>bucketize.Scalar</td><td>bucketize_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>searchsorted.Tensor</td><td>searchsorted_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>searchsorted.Tensor_out</td><td>searchsorted_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>searchsorted.Scalar</td><td>searchsorted_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>searchsorted.Scalar_out</td><td>searchsorted_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>bucketize.Tensor</td><td>bucketize_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>bucketize.Tensor_out</td><td>bucketize_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>bucketize.Scalar</td><td>bucketize_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>searchsorted.Tensor</td><td>searchsorted_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>searchsorted.Tensor_out</td><td>searchsorted_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>searchsorted.Scalar</td><td>searchsorted_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>searchsorted.Scalar_out</td><td>searchsorted_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mse_loss.out</td><td>mse_loss_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mse_loss_backward.grad_input</td><td>mse_loss_backward_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mse_loss_backward</td><td>mse_loss_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -349,8 +349,8 @@
 <tr><td>log_sigmoid_backward</td><td>log_sigmoid_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>softplus.out</td><td>softplus_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>softplus_backward.grad_input</td><td>softplus_backward_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>softshrink.out</td><td>softshrink_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>softshrink_backward.grad_input</td><td>softshrink_backward_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>softshrink.out</td><td>softshrink_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>softshrink_backward.grad_input</td><td>softshrink_backward_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>adaptive_avg_pool2d.out</td><td>adaptive_avg_pool2d_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_adaptive_avg_pool2d</td><td>adaptive_avg_pool2d_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_adaptive_avg_pool2d_backward</td><td>adaptive_avg_pool2d_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
