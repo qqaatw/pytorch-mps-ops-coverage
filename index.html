@@ -19,7 +19,7 @@
             <tr>
                 <th data-sortable="true">Function name</th>
                 <th data-sortable="true">Kernel Name</th>
-                <th data-sortable="true">In v2.3.1</th>
+                <th data-sortable="true">In v2.4.0</th>
                 <th data-sortable="true">Starting from macOS version</th>
                 <th>Note</th>
             </tr>
@@ -111,7 +111,7 @@
 <tr><td>_fft_c2c.out</td><td>_fft_c2c_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index.Tensor_out</td><td>index_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_index_put_impl</td><td>_index_put_impl_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>isin.Tensor_Tensor_out</td><td>isin_Tensor_Tensor_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>isin.Tensor_Tensor_out</td><td>isin_Tensor_Tensor_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>isnan</td><td>isnan</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_layer_norm</td><td>layer_norm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_layer_norm_backward</td><td>layer_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -142,8 +142,8 @@
 <tr><td>mps_convolution_backward</td><td>mps_convolution_backward</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mm.out</td><td>mm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_convert_weight_to_int4pack</td><td>_convert_weight_to_int4pack_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_weight_int4pack_mm</td><td>_weight_int4pack_mm_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_weight_int8pack_mm</td><td>_weight_int8pack_mm_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_weight_int4pack_mm</td><td>_weight_int4pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_weight_int8pack_mm</td><td>_weight_int8pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mul.out</td><td>mul_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_batch_norm</td><td>batch_norm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_batch_norm.out</td><td>batch_norm_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -206,9 +206,9 @@
 <tr><td>_weight_norm_interface</td><td>weight_norm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_weight_norm_interface_backward</td><td>weight_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_efficientzerotensor</td><td>_efficientzerotensor_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_batch_norm_with_update</td><td>_batch_norm_with_update_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_batch_norm_with_update.out</td><td>_batch_norm_with_update_mps_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>batch_norm_backward</td><td>_new_batch_norm_backward_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_batch_norm_with_update</td><td>_batch_norm_with_update_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_batch_norm_with_update.out</td><td>_batch_norm_with_update_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>batch_norm_backward</td><td>_new_batch_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>norm.dtype_out</td><td>norm_dtype_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>norm.out</td><td>norm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>zero</td><td>zero_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
