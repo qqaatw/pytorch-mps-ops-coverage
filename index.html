@@ -19,7 +19,7 @@
             <tr>
                 <th data-sortable="true">Function name</th>
                 <th data-sortable="true">Kernel Name</th>
-                <th data-sortable="true">In v2.4.1</th>
+                <th data-sortable="true">In v2.5.0</th>
                 <th data-sortable="true">Starting from macOS version</th>
                 <th>Note</th>
             </tr>
@@ -141,7 +141,7 @@
 <tr><td>_mps_convolution</td><td>_mps_convolution</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mps_convolution_backward</td><td>mps_convolution_backward</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mm.out</td><td>mm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_convert_weight_to_int4pack</td><td>_convert_weight_to_int4pack_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_convert_weight_to_int4pack</td><td>_convert_weight_to_int4pack_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_weight_int4pack_mm</td><td>_weight_int4pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_weight_int8pack_mm</td><td>_weight_int8pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mul.out</td><td>mul_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -237,12 +237,12 @@
 <tr><td>bitwise_and.Tensor_out</td><td>bitwise_and_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>bitwise_or.Tensor_out</td><td>bitwise_or_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>bitwise_xor.Tensor_out</td><td>bitwise_xor_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>lshift.Scalar</td><td>__ilshift__</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>lshift.Tensor</td><td>__ilshift__</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>bitwise_left_shift.Tensor_out</td><td>bitwise_left_shift_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>rshift.Scalar</td><td>__irshift__</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>rshift.Tensor</td><td>__irshift__</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>bitwise_right_shift.Tensor_out</td><td>bitwise_right_shift_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>lshift.Scalar</td><td>__ilshift__</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>lshift.Tensor</td><td>__ilshift__</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>bitwise_left_shift.Tensor_out</td><td>bitwise_left_shift_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>rshift.Scalar</td><td>__irshift__</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>rshift.Tensor</td><td>__irshift__</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>bitwise_right_shift.Tensor_out</td><td>bitwise_right_shift_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addbmm</td><td>addbmm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addbmm.out</td><td>addbmm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>random.from</td><td>random_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -420,17 +420,17 @@
 <tr><td>isposinf.out</td><td>isposinf_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>isneginf.out</td><td>isneginf_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>linalg_cross.out</td><td>linalg_cross_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>linalg_lu_factor</td><td>linalg_lu_factor_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>linalg_lu_factor.out</td><td>linalg_lu_factor_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>linalg_lu_factor</td><td>linalg_lu_factor_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>linalg_lu_factor.out</td><td>linalg_lu_factor_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>linalg_inv_ex.inverse</td><td>linalg_inv_ex_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>linalg_vector_norm.out</td><td>linalg_vector_norm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_scaled_dot_product_attention_math_for_mps</td><td>_scaled_dot_product_attention_math_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_fused_adam</td><td>_fused_adam_kernel_mps_</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_fused_adam.tensor_lr</td><td>_fused_adam_kernel_mps_</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_fused_adamw</td><td>_fused_adamw_kernel_mps_</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_fused_adamw.tensor_lr</td><td>_fused_adamw_kernel_mps_</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_fused_sgd</td><td>_fused_sgd_kernel_mps_</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_fused_sgd.tensor_lr</td><td>_fused_sgd_kernel_mps_</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_scaled_dot_product_attention_math_for_mps</td><td>_scaled_dot_product_attention_math_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_fused_adam</td><td>_fused_adam_kernel_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_fused_adam.tensor_lr</td><td>_fused_adam_kernel_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_fused_adamw</td><td>_fused_adamw_kernel_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_fused_adamw.tensor_lr</td><td>_fused_adamw_kernel_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_fused_sgd</td><td>_fused_sgd_kernel_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_fused_sgd.tensor_lr</td><td>_fused_sgd_kernel_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_group_norm</td><td>manually registered</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_group_norm_backward</td><td>manually registered</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
         </tbody>
