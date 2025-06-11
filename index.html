@@ -32,7 +32,7 @@
 <tr><td>view_as_complex</td><td>view_as_complex</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>sgn.out</td><td>sgn_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>conj_physical.out</td><td>conj_physical_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>acos.out</td><td>acos_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>acos.out</td><td>acos_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>add.out</td><td>add_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addmv.out</td><td>addmv_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addr</td><td>addr_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -46,8 +46,8 @@
 <tr><td>asinh.out</td><td>asinh_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>atanh.out</td><td>atanh_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>as_strided</td><td>as_strided_tensorimpl_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>asin.out</td><td>asin_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>atan.out</td><td>atan_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>asin.out</td><td>asin_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>atan.out</td><td>atan_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>baddbmm.out</td><td>baddbmm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>bernoulli.out</td><td>bernoulli_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>bernoulli.Tensor</td><td>bernoulli_mps_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -78,7 +78,7 @@
 <tr><td>_copy_from</td><td>_copy_from_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_copy_from_and_resize</td><td>_copy_from_and_resize_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>cos.out</td><td>cos_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>cosh.out</td><td>cosh_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>cosh.out</td><td>cosh_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>count_nonzero.dim_IntList</td><td>count_nonzero_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_mps_convolution_transpose</td><td>_mps_convolution_transpose</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mps_convolution_transpose_backward</td><td>mps_convolution_transpose_backward</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -179,6 +179,8 @@
 <tr><td>_prelu_kernel_backward</td><td>prelu_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>gelu.out</td><td>gelu_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>gelu_backward.grad_input</td><td>gelu_backward_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>hardshrink.out</td><td>hardshrink_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>hardshrink_backward.grad_input</td><td>hardshrink_backward_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>rsqrt.out</td><td>rsqrt_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>silu.out</td><td>silu_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>silu_backward.grad_input</td><td>silu_backward_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -189,7 +191,7 @@
 <tr><td>logit.out</td><td>logit_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>sin.out</td><td>sin_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>sinc.out</td><td>sinc_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>sinh.out</td><td>sinh_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>sinh.out</td><td>sinh_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_softmax.out</td><td>softmax_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_softmax_backward_data.out</td><td>softmax_backward_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>sum.IntList_out</td><td>sum_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
