@@ -19,7 +19,7 @@
             <tr>
                 <th data-sortable="true">Function name</th>
                 <th data-sortable="true">Kernel Name</th>
-                <th data-sortable="true">In v2.11.0</th>
+                <th data-sortable="true">In v2.12.0</th>
                 <th data-sortable="true">Starting from macOS version</th>
                 <th>Note</th>
             </tr>
@@ -171,7 +171,7 @@
 <tr><td>_weight_int4pack_mm</td><td>_weight_int4pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_weight_int8pack_mm</td><td>_weight_int8pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mul.out</td><td>mul_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>mvlgamma.out</td><td>mvlgamma_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>mvlgamma.out</td><td>mvlgamma_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_batch_norm</td><td>batch_norm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>native_batch_norm.out</td><td>batch_norm_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_native_batch_norm_legit</td><td>_batch_norm_legit_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -240,8 +240,8 @@
 <tr><td>_weight_norm_interface</td><td>weight_norm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_weight_norm_interface_backward</td><td>weight_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_efficientzerotensor</td><td>_efficientzerotensor_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_standard_gamma_grad</td><td>_standard_gamma_grad_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_standard_gamma</td><td>_s_gamma_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_standard_gamma_grad</td><td>_standard_gamma_grad_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_standard_gamma</td><td>_s_gamma_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_batch_norm_with_update</td><td>_batch_norm_with_update_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_batch_norm_with_update.out</td><td>_batch_norm_with_update_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>batch_norm_backward</td><td>_new_batch_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -266,7 +266,7 @@
 <tr><td>masked_scatter</td><td>masked_scatter__mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>view</td><td>view</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_add.out</td><td>index_add_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>index_reduce.out</td><td>index_reduce_mps_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>index_reduce.out</td><td>index_reduce_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_fill.int_Scalar</td><td>index_fill_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_fill.int_Tensor</td><td>index_fill_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>scatter.src_out</td><td>scatter_src_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -317,8 +317,8 @@
 <tr><td>masked_select</td><td>masked_select_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>nonzero.out</td><td>nonzero_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>nonzero</td><td>nonzero_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>nonzero_static.out</td><td>nonzero_static_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>nonzero_static</td><td>nonzero_static_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>nonzero_static.out</td><td>nonzero_static_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>nonzero_static</td><td>nonzero_static_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>gather.out</td><td>gather_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addcmul.out</td><td>addcmul_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addcdiv.out</td><td>addcdiv_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -327,7 +327,7 @@
 <tr><td>linalg_solve_triangular</td><td>linalg_solve_triangular_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>cholesky.out</td><td>cholesky_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>cholesky</td><td>cholesky</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_cholesky_solve_helper</td><td>_cholesky_solve_helper_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_cholesky_solve_helper</td><td>_cholesky_solve_helper_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>cholesky_inverse</td><td>cholesky_inverse</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>cholesky_inverse.out</td><td>cholesky_inverse_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>lu_unpack.out</td><td>lu_unpack_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -514,7 +514,7 @@
 <tr><td>linalg_inv_ex.inverse</td><td>linalg_inv_ex_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>linalg_vector_norm.out</td><td>linalg_vector_norm_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_linalg_solve_ex.result</td><td>_linalg_solve_ex_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>linalg_qr.out</td><td>linalg_qr_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>linalg_qr.out</td><td>linalg_qr_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_scaled_dot_product_attention_math_for_mps</td><td>_scaled_dot_product_attention_math_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_bessel_j0.out</td><td>special_bessel_j0_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_bessel_j1.out</td><td>special_bessel_j1_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
