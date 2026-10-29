@@ -19,7 +19,7 @@
             <tr>
                 <th data-sortable="true">Function name</th>
                 <th data-sortable="true">Kernel Name</th>
-                <th data-sortable="true">In v2.14.1</th>
+                <th data-sortable="true">In v2.15.0</th>
                 <th data-sortable="true">Starting from macOS version</th>
                 <th>Note</th>
             </tr>
@@ -157,7 +157,7 @@
 <tr><td>logaddexp.out</td><td>logaddexp_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>logaddexp2.out</td><td>logaddexp2_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>xlogy.OutTensor</td><td>xlogy_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>logspace.out</td><td>logspace_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>logspace.out</td><td>logspace_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_log_softmax.out</td><td>log_softmax_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_log_softmax_backward_data.out</td><td>log_softmax_backward_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_logcumsumexp</td><td>_logcumsumexp_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -179,8 +179,8 @@
 <tr><td>_mps_convolution</td><td>_mps_convolution</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mps_convolution_backward</td><td>mps_convolution_backward</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>mm.out</td><td>mm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_int_mm</td><td>_int_mm_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_int_mm.out</td><td>_int_mm_out_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_int_mm</td><td>_int_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_int_mm.out</td><td>_int_mm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_convert_weight_to_int4pack</td><td>_convert_weight_to_int4pack_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_weight_int4pack_mm</td><td>_weight_int4pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_weight_int8pack_mm</td><td>_weight_int8pack_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -265,14 +265,14 @@
 <tr><td>batch_norm_backward</td><td>_new_batch_norm_backward_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>norm.dtype_out</td><td>norm_dtype_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>norm.out</td><td>norm_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>frexp.Tensor_out</td><td>frexp_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>frexp.Tensor_out</td><td>frexp_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>zero</td><td>zero_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>sub.out</td><td>sub_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>rsub.Tensor</td><td>rsub</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>heaviside.out</td><td>heaviside_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>heaviside.out</td><td>heaviside_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>addmm.out</td><td>addmm_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_scaled_mm_v2.out</td><td>_scaled_mm_mps_v2_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>_grouped_mm</td><td>_grouped_mm_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_scaled_mm_v2.out</td><td>_scaled_mm_mps_v2_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>_grouped_mm</td><td>_grouped_mm_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_to_sparse.sparse_dim</td><td>dense_to_sparse</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_to_sparse</td><td>dense_to_sparse</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>_local_scalar_dense</td><td>_local_scalar_dense_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -287,7 +287,7 @@
 <tr><td>masked_fill.Tensor</td><td>masked_fill__mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>masked_scatter</td><td>masked_scatter__mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>view</td><td>view</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>put</td><td>put_</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>put</td><td>put_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_add.out</td><td>index_add_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_reduce.out</td><td>index_reduce_mps_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_fill.int_Scalar</td><td>index_fill_</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -334,8 +334,8 @@
 <tr><td>gt.Tensor_out</td><td>gt_Tensor_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>lt.Scalar_out</td><td>lt_Scalar_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>lt.Tensor_out</td><td>lt_Tensor_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>take.out</td><td>take_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>take</td><td>take</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>take.out</td><td>take_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>take</td><td>take</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_select.out</td><td>index_select_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>index_select</td><td>index_select_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>masked_select.out</td><td>masked_select_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -521,7 +521,7 @@
 <tr><td>col2im</td><td>col2im_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>im2col.out</td><td>im2col_out_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>im2col</td><td>im2col_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>record_stream</td><td>record_stream_mps</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>record_stream</td><td>record_stream_mps</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>isposinf.out</td><td>isposinf_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>isneginf.out</td><td>isneginf_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_entr.out</td><td>special_entr_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
@@ -561,7 +561,7 @@
 <tr><td>special_chebyshev_polynomial_w.out</td><td>special_chebyshev_polynomial_w_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_hermite_polynomial_h.out</td><td>special_hermite_polynomial_h_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_hermite_polynomial_he.out</td><td>special_hermite_polynomial_he_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
-<tr><td>special_laguerre_polynomial_l.out</td><td>special_laguerre_polynomial_l_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
+<tr><td>special_laguerre_polynomial_l.out</td><td>special_laguerre_polynomial_l_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_legendre_polynomial_p.out</td><td>special_legendre_polynomial_p_out</td><td style='background-color:#fff000;'>False</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_modified_bessel_i0.out</td><td>special_modified_bessel_i0_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
 <tr><td>special_modified_bessel_i1.out</td><td>special_modified_bessel_i1_out</td><td style='background-color:#0ff000;'>True</td><td>N/A</td><td>N/A</td></tr>
